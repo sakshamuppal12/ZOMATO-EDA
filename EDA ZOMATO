@@ -4,3 +4,4 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 df = pd.read_csv(r"C:\Users\Saksham\OneDrive\Desktop\zomato (1).csv", encoding='latin1') 
 df.head()
+df.info()
