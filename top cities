@@ -1,0 +1,8 @@
+top_cities = df['City'].value_counts().head(10)
+plt.figure(figsize=(10, 6))
+sns.barplot(x=top_cities.values, y=top_cities.index,hue=top_cities.index, palette="magma", dodge=False, legend=False)
+plt.title("Top 10 Cities with Most Restaurants")
+plt.xlabel("Number of Restaurants")
+plt.ylabel("City")
+plt.tight_layout()
+plt.show()
